@@ -1,0 +1,27 @@
+{
+  "name": "climaticos",
+  "version": "1.0.0",
+  "description": "ventilation system sales's system from company Climaticos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickmx/climaticos.git"
+  },
+  "keywords": [
+    "koa",
+    "koav2",
+    "mysql",
+    "sequelize",
+    "node",
+    "rest"
+  ],
+  "author": "erickmx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erickmx/climaticos/issues"
+  },
+  "homepage": "https://github.com/erickmx/climaticos#readme"
+}
