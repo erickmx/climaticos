@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { Schema, model } = mongoose;
 
 /**
  * evaluates if the email field is valid befora insert it
@@ -10,7 +9,7 @@ const emailValidate = email =>
     email
   );
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
   firstName: {
     type: String,
     required: [true, "firstName is required"]
@@ -35,4 +34,4 @@ const userSchema = new Schema({
   }
 });
 
-module.exports = model("User", userSchema);
+module.exports = mongoose.model("User", userSchema);

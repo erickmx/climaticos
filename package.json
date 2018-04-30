@@ -4,21 +4,15 @@
   "description": "ventilation system sales's system from company Climaticos",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "dev": "nodemon .",
+    "test": "mocha test/**/*.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erickmx/climaticos.git"
   },
-  "keywords": [
-    "koa",
-    "koav2",
-    "mysql",
-    "sequelize",
-    "node",
-    "rest"
-  ],
+  "keywords": ["koa", "koav2", "mysql", "sequelize", "node", "rest"],
   "author": "erickmx",
   "license": "MIT",
   "bugs": {
@@ -40,7 +34,10 @@
     "mongoose": "^5.0.16"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "faker": "^4.1.0",
-    "nodemon": "^1.17.3"
+    "mocha": "^5.1.1",
+    "nodemon": "^1.17.3",
+    "supertest": "^3.0.0"
   }
 }

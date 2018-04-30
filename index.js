@@ -5,9 +5,7 @@ require("dotenv").load();
 const port = process.env.PORT || 3000;
 
 (async () => {
-  await mongoose.connect(process.env.DATABASE, {
-    useMongoClient: true
-  });
+  await mongoose.connect(process.env.DATABASE);
 
   if (process.env.NODE_ENV === "dev") {
     app.use(async (ctx, next) => {
