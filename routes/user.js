@@ -5,14 +5,6 @@ const router = new Router({
   prefix: "/user"
 });
 
-const fakeUSers = [
-  {
-    username: "sjdna",
-    password: "dence",
-    id: 1
-  }
-];
-
 router.get("/", async ctx => await (ctx.body = await User.find()));
 
 router.get("/:id", async ctx => {

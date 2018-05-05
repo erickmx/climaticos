@@ -1,4 +1,9 @@
 extends layouts/template.pug
+include mixins/table.mix.pug
 
 block main
     h1 Hola mundo
+    //if headerData
+        +list(headerData, bodyData)
+    //else
+        .title No hay informacion para desplegar

@@ -1,0 +1,11 @@
+mixin list(headerData, bodyData)
+    table.striped.highlight.centered.responsive-table
+        thead
+            tr
+                each value in headerData
+                    th= value
+        tbody
+            each data in bodyData
+                tr
+                    each rowData in data
+                        td= rowData
